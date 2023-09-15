@@ -1,12 +1,11 @@
 const Footer = () => {
   return (
     <>
-      
-<footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-    </span>
-</footer>
-
+      <div className="bg-gray-100 py-4 sticky bottom-0 border-t border-gray-200 px-6 flex items-center justify-between text-gray-600">
+      <div className="container">
+      <p className="flex items-start justify-center">Copyright @ 2023 <a href="https://github.com/OnelioViera" className="hover:underline ml-1" target="blank"> Onelio Viera</a></p>
+      </div>
+    </div>
     </>
   )
 }
