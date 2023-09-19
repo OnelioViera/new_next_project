@@ -1,12 +1,12 @@
 export const metadata = {
-  title: 'Contact',
+  title: 'Playground',
 }
 
-const ContactPage = () => {
+const PlaygroundPage = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <div className="container mx-auto px-4">
-        <h1 className="font-sans text-5xl font-bold my-5">Contact Us</h1>
+        <h1 className="font-sans text-5xl font-bold my-5">Playground</h1>
         <p>Coming soon...
         </p>
       </div>
@@ -14,4 +14,4 @@ const ContactPage = () => {
   )
 }
 
-export default ContactPage
+export default PlaygroundPage
