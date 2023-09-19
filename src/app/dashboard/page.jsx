@@ -1,3 +1,5 @@
+"use client"
+
 const DashboardPage = () => {
   return (
     <>
@@ -14,3 +16,8 @@ const DashboardPage = () => {
 }
 
 export default DashboardPage
+
+
+
+
+
