@@ -1,6 +1,7 @@
 import Jumbotron from "./components/Jumbotron"
 import PlaceHolder from "./components/PlaceHolder"
 
+
 const HomePage = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -13,7 +14,6 @@ const HomePage = () => {
 <PlaceHolder />
         
       </div>
-        
     </main>
   )
 }

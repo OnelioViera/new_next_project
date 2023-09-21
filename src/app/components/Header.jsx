@@ -7,7 +7,7 @@ const Header = () => {
   return (
 
     <>
-      <nav class="bg-white fixed w-full border-4 border-gray-200 dark:bg-gray-900">
+      <nav class="bg-white fixed w-full border-4 border-gray-200">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
 
           <Link href='/'><div class="flex items-center">
