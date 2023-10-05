@@ -5,16 +5,22 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
     "lint": "next lint"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.23.5",
     "@clerk/themes": "^1.7.5",
     "autoprefixer": "10.4.15",
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
     "gray-matter": "^4.0.3",
     "marked": "^9.0.3",
+    "mongoose": "^7.5.4",
     "next": "13.4.19",
+    "next-themes": "^0.2.1",
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -22,6 +28,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "nodemon": "^3.0.1",
     "typescript": "5.2.2"
   }
 }

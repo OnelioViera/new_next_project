@@ -10,10 +10,10 @@ const Header = () => {
       <nav class="bg-white fixed w-full border-4 border-gray-200">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
 
-          <Link href='/'><div class="flex items-center">
+          <div class="flex items-center">
             <img src="/code-logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white mt-1">Resource</span>
-          </div></Link>
+          </div>
           <div class="flex items-center md:order-2">
             {!userId && (
               <Link href="sign-in" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Sign in</Link>
@@ -42,11 +42,11 @@ const Header = () => {
           </div>
           <div id="mega-menu-icons" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
             <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
-            <li>
+            {/* <li>
                 {userId && (
                   <Link href="/" class="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Home</Link>
                 )}
-              </li>
+              </li> */}
 
             <li>
                 {userId && (
@@ -66,6 +66,15 @@ const Header = () => {
                 <div id="mega-menu-icons-dropdown" class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700">
                   <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
                     <ul class="space-y-4" aria-labelledby="mega-menu-icons-dropdown-button">
+                    <li>
+                        <Link href="/playground" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
+                          <span class="sr-only">Playground</span>
+                          <svg class="w-3 h-3 mr-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                            <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10ZM17 13h-2v-2a1 1 0 0 0-2 0v2h-2a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2Z" />
+                          </svg>
+                          Playground
+                        </Link>
+                      </li>
                       <li>
                         <Link href="/resources" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
                           <span class="sr-only">Resources</span>
@@ -76,15 +85,7 @@ const Header = () => {
                           Resources
                         </Link>
                       </li>
-                      <li>
-                        <Link href="/playground" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
-                          <span class="sr-only">Playground</span>
-                          <svg class="w-3 h-3 mr-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
-                            <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10ZM17 13h-2v-2a1 1 0 0 0-2 0v2h-2a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2Z" />
-                          </svg>
-                          Playground
-                        </Link>
-                      </li>
+
                     </ul>
                   </div>
                   <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
